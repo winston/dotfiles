@@ -1,0 +1,2 @@
+source ~/.dotfiles/bash/includes/config
+source ~/.dotfiles/bash/includes/completion
