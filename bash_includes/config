@@ -1,0 +1,41 @@
+# Path
+
+# PS
+
+# Editor
+
+# Bash Settings
+###############
+
+## Case-insensitive Globbing (used in pathname expansion)
+shopt -s nocaseglob
+
+## Autocorrect typos in path names when using `cd`
+shopt -s cdspell
+
+# Aliases
+###############
+
+## Reload bash
+alias reload='. ~/.bash_profile'
+
+## Easier navigation: .., ..., ~ and -
+alias ..="cd .."
+alias ~="cd ~" # `cd` is probably faster to type though
+
+## ps
+function psg { ps -aux | grep $1 -i }
+
+## Switch to Dev dir
+function dev { cd ~/Dev/heroku/apps/$1; }
+
+## Databases
+alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+alias mystart='mysql.server start'
+alias mystop='mysql.server stop'
+
+## Rails
+alias rs='rails s'
+alias rc='rails c'
+alias rd='rake db:migrate db:test:prepare'
