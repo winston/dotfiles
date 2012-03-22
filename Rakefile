@@ -1,4 +1,4 @@
-# Glorious Credits: https://github.com/holman/dotfiles/blob/master/Rakefile
+# Credits: https://github.com/holman/dotfiles/blob/master/Rakefile
 
 require 'rake'
 

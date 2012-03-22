@@ -1,6 +1,6 @@
-# Glorious Credits: https://github.com/ryanb/dotfiles/blob/master/bash/completion_scripts/rake_completion
-
 #!/usr/bin/env ruby
+
+# Credits: https://github.com/ryanb/dotfiles/blob/master/bash/completion_scripts/rake_completion
 
 # To install, add the following line to your .bash_profile or .bashrc
 # complete -C path/to/rake_completion -o default rake
