@@ -1,9 +1,3 @@
-# Path
-###############
-
-PATH="/usr/local/git/bin":"/usr/local/mysql/bin":"/usr/local/pgsql/bin":"~/Dev/.cmd":$PATH
-
-
 # PS1
 ###############
 
@@ -33,8 +27,6 @@ alias ..="cd .."
 alias ~="cd ~" # `cd` is probably faster to type though
 
 ## Databases
-alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias mystart="mysql.server start"
 alias mystop="mysql.server stop"
 
