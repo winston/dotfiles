@@ -1,0 +1,19 @@
+# Aliases
+###############
+## Easier navigation: .., ..., ~ and -
+alias ls="ls -alG"
+alias ..="cd .."
+alias ~="cd ~" # `cd` is probably faster to type though
+
+## Databases
+alias mystart="mysql.server start"
+alias mystop="mysql.server stop"
+
+## Rails
+alias rs="rails s"
+alias rc="rails c"
+alias rd="rake db:migrate db:test:prepare"
+
+# Git
+alias gs="git status"
+alias gx="gitx"
