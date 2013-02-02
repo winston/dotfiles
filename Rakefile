@@ -36,6 +36,14 @@ task :install do
   end
 end
 
+desc "Do more ZSH setup."
+task :zsh_setup do
+  # Set up ZSH prompt
+  Dir.glob('zsh/prompt/*').each do |file|
+    `cp #{file} $HOME/.zprezto/modules/prompt/functions/1`
+  end
+end  
+
 task :uninstall do
 
   Dir.glob('**/*.symlink').each do |linkable|
