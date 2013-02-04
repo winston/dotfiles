@@ -1,3 +1,7 @@
+# Path
+
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+
 # Aliases
 ###############
 ## Easier navigation: .., ..., ~ and -
