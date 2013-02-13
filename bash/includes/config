@@ -1,3 +1,8 @@
+# Path
+###############
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$HOME/.rvm/bin:$PATH"
+
+
 # PS1
 ###############
 
@@ -39,5 +44,4 @@ alias rd="rake db:migrate db:test:prepare"
 alias gs="git status"
 alias gx="gitx"
 
-# This loads RVM into a shell session.
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

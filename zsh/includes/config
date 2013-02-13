@@ -1,6 +1,6 @@
 # Path
 
-export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$HOME/.rvm/bin:$PATH"
 
 # Aliases
 ###############
