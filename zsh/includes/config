@@ -1,6 +1,8 @@
 # Path
-
 export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$HOME/.rvm/bin:$PATH"
+
+# Autocorrect OFF
+unsetopt correct
 
 # Aliases
 ###############
