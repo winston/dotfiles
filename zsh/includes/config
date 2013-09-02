@@ -23,3 +23,7 @@ alias rd="rake db:migrate db:test:prepare"
 # Git
 alias gs="git status"
 alias gx="gitx"
+
+# z (brew install z)
+###############
+. `brew --prefix`/etc/profile.d/z.sh
