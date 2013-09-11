@@ -1,4 +1,5 @@
 # Dot Files
+
 For use on my machines. Gloriously copied from a few places.
 
 ## Prerequisites
@@ -33,6 +34,7 @@ For use on my machines. Gloriously copied from a few places.
     git clone git://github.com/winston/dotfiles ~/.dotfiles
     cd ~/.dotfiles
     rake install
+    rake zsh_setup
 
 ## License
 

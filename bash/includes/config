@@ -1,6 +1,6 @@
 # Path
 ###############
-export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$HOME/.rvm/bin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$HOME/.rvm/bin:/usr/local/share/npm/bin/:$PATH"
 
 
 # PS1
