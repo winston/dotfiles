@@ -1,9 +1,10 @@
 # Path
 ###############
-export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$HOME/.rvm/bin:/usr/local/share/npm/bin/:$PATH"
+
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$HOME/.rvm/bin:$PATH"
 
 
-# PS1
+# Prompt
 ###############
 
 parse_git_branch() { git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/(\1)/"; }
@@ -23,13 +24,12 @@ shopt -s cdspell
 # Aliases
 ###############
 
-## Reload bash
+## Reload shell
 alias reload=". ~/.bash_profile"
 
 ## Easier navigation: .., ..., ~ and -
 alias ls="ls -alG"
 alias ..="cd .."
-alias ~="cd ~" # `cd` is probably faster to type though
 
 ## Databases
 alias mystart="mysql.server start"
@@ -44,4 +44,12 @@ alias rd="rake db:migrate db:test:prepare"
 alias gs="git status"
 alias gx="gitx"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# z (brew install z)
+###############
+
+. `brew --prefix`/etc/profile.d/z.sh
+
+# npm (https://github.com/creationix/nvm)
+###############
+
+[[ -s /Users/winston/.nvm/nvm.sh ]] && . /Users/winston/.nvm/nvm.sh # This loads NVM

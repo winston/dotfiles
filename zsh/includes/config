@@ -1,15 +1,23 @@
 # Path
-export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$HOME/.rvm/bin:/usr/local/share/npm/bin/:$PATH"
+###############
 
-# Autocorrect OFF
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$HOME/.rvm/bin:$PATH"
+
+# Bash Settings
+###############
+
+## Do not Autocorrect commands
 unsetopt correct
 
 # Aliases
 ###############
+
+## Reload shell
+alias reload=". ~/.zshrc"
+
 ## Easier navigation: .., ..., ~ and -
 alias ls="ls -alG"
 alias ..="cd .."
-alias ~="cd ~" # `cd` is probably faster to type though
 
 ## Databases
 alias mystart="mysql.server start"
@@ -26,4 +34,10 @@ alias gx="gitx"
 
 # z (brew install z)
 ###############
+
 . `brew --prefix`/etc/profile.d/z.sh
+
+# npm (https://github.com/creationix/nvm)
+###############
+
+[[ -s /Users/winston/.nvm/nvm.sh ]] && . /Users/winston/.nvm/nvm.sh # This loads NVM
