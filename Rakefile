@@ -40,7 +40,7 @@ desc "Do more ZSH setup."
 task :zsh_setup do
   # Set up ZSH prompt
   Dir.glob('zsh/prompt/*').each do |file|
-    `cp #{file} $HOME/.zprezto/modules/prompt/functions/1`
+    `cp #{file} $HOME/.zprezto/modules/prompt/functions/$1`
   end
 end  
 
