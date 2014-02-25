@@ -39,6 +39,8 @@ alias mystop="mysql.server stop"
 alias rs="rails s"
 alias rc="rails c"
 alias rd="rake db:migrate db:test:prepare"
+alias sr="spring rspec"
+alias ss="spring stop"
 
 # Git
 alias gs="git status"
