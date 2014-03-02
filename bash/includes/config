@@ -44,6 +44,8 @@ alias ss="spring stop"
 
 # Git
 alias gs="git status"
+alias ga="git add ."
+alias gc="git commit -m"
 alias gx="gitx"
 
 # z (brew install z)
