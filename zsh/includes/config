@@ -36,6 +36,8 @@ alias sp="spring stop"
 alias gs="git status"
 alias ga="git add ."
 alias gc="git commit -m"
+alias go="git checkout"
+alias gl="git log"
 alias gx="gitx"
 
 # z (brew install z)
