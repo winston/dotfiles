@@ -1,7 +1,7 @@
 # Path
 ###############
 
-export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$HOME/.rvm/bin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$HOME/.rvm/bin:$PATH"
 export GOPATH="$HOME/workspace/go"
 
 # Bash Settings
