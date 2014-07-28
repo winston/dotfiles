@@ -12,4 +12,5 @@ fi
 
 # Customize to your needs...
 
+source ~/.dotfiles/shell/common
 source ~/.dotfiles/zsh/includes/config

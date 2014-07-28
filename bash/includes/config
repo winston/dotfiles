@@ -1,17 +1,10 @@
-# Path
-###############
-
-export PATH="$HOME/.rvm/bin:/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
-export GOPATH="$HOME/workspace/go"
-
 # Prompt
 ###############
 
 parse_git_branch() { git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/(\1)/"; }
 export PS1="\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[00m\]\$(parse_git_branch)\$ "
 
-
-# Bash Settings
+# Shell Settings
 ###############
 
 ## Case-insensitive Globbing (used in pathname expansion)
@@ -19,44 +12,3 @@ shopt -s nocaseglob
 
 ## Autocorrect typos in path names when using `cd`
 shopt -s cdspell
-
-
-# Aliases
-###############
-
-## Reload shell
-alias reload=". ~/.bash_profile"
-
-## Easier navigation: .., ..., ~ and -
-alias ls="ls -alG"
-alias ..="cd .."
-
-## Databases
-alias mystart="mysql.server start"
-alias mystop="mysql.server stop"
-
-## Rails
-alias rs="rails s"
-alias rc="rails c"
-alias rd="rake db:migrate db:test:prepare"
-alias sr="spring rspec"
-alias ss="spring stop"
-
-# Git
-alias gs="git status"
-alias ga="git add ."
-alias gc="git commit -m"
-alias go="git checkout"
-alias gl="git log"
-alias gx="gitx"
-
-# z (brew install z)
-###############
-
-. `brew --prefix`/etc/profile.d/z.sh
-
-# npm (https://github.com/creationix/nvm)
-###############
-
-export NVM_DIR=~/.nvm
-. `brew --prefix nvm`/nvm.sh
