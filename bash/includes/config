@@ -1,7 +1,7 @@
 # Path
 ###############
 
-export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$HOME/.rvm/bin:$PATH"
+export PATH="$HOME/.rvm/bin:/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 export GOPATH="$HOME/workspace/go"
 
 # Prompt
@@ -58,4 +58,5 @@ alias gx="gitx"
 # npm (https://github.com/creationix/nvm)
 ###############
 
-[[ -s /Users/winston/.nvm/nvm.sh ]] && . /Users/winston/.nvm/nvm.sh # This loads NVM
+export NVM_DIR=~/.nvm
+. `brew --prefix nvm`/nvm.sh
