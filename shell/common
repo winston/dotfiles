@@ -28,6 +28,8 @@ alias ss="spring status"
 alias ss="spring stop"
 
 # Git
+alias gf="git fetch -p"
+alias gb="git branch -a"
 alias gs="git status"
 alias ga="git add ."
 alias gc="git commit -m"
