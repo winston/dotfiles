@@ -5,7 +5,7 @@ require 'rake'
 desc "Hook our dotfiles into system-standard positions."
 task :install do
   linkables     = Dir.glob('*/**{.symlink}')
-  
+
   skip_all      = false
   overwrite_all = false
   backup_all    = false
@@ -34,6 +34,8 @@ task :install do
     end
     `ln -s "$PWD/#{linkable}" "#{target}"`
   end
+
+  Rake::Task["zsh_setup"].invoke
 end
 
 desc "Do more ZSH setup."
@@ -42,7 +44,7 @@ task :zsh_setup do
   Dir.glob('zsh/prompt/*').each do |file|
     `cp #{file} $HOME/.zprezto/modules/prompt/functions/$1`
   end
-end  
+end
 
 task :uninstall do
 
