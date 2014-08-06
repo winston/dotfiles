@@ -1,17 +1,20 @@
 # Credits: https://github.com/rtomayko/dotfiles/blob/rtomayko/.gitconfig
 
 [user]
-	name = Winston
-	email = winston.yongwei@gmail.com
+	name         = Winston
+	email        = winston.yongwei@gmail.com
 
 [alias]
-  st      = status
-  ll      = log --pretty=oneline --abbrev-commit --max-count=15
-  wip     = !git add -u && git commit -m ...
-  wipc    = !date >> WIP && git add WIP && git commit -m ...
+  st            = status
+  ll            = log --pretty=oneline --abbrev-commit --max-count=15
+  wip           = !git add -u && git commit -m ...
+  wipc          = !date >> WIP && git add WIP && git commit -m ...
 
 [push]
-  default = matching
+  default       = matching
 
 [color]
-  ui      = auto
+  ui            = auto
+
+[core]
+  excludesfile  = /Users/winston/.gitignore
