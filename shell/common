@@ -17,6 +17,9 @@ alias ws="cd workspace"
 alias mybeg="mysql.server start"
 alias myend="mysql.server stop"
 
+alias rd_start='redis-server /usr/local/etc/redis.conf'
+alias es_start='elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
+
 ## Rails
 alias rs="rails s"
 alias rc="rails c"
