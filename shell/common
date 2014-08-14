@@ -1,7 +1,7 @@
 # Path
 ###############
 
-export PATH="$HOME/.rvm/bin:./bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+export PATH="$HOME/.rvm/bin:./bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/Versions/9.3/bin:$HOME/.dotfiles/shell/scripts:$PATH"
 export GOPATH="$HOME/workspace/go"
 
 # Aliases
@@ -31,11 +31,14 @@ alias ss="spring status"
 alias ss="spring stop"
 
 # Git
+alias gpull="git pull"
+alias gpush="git push"
+
 alias gf="git fetch -p"
 alias gb="git branch -a"
 alias gs="git status"
 alias ga="git add ."
-alias gc="git commit -m"
+alias gc="git commit"
 alias go="git checkout"
 alias gl="git ll"
 alias gx="gitx"

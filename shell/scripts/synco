@@ -1,0 +1,16 @@
+#!/bin/sh
+
+echo '-----> Pulling from Origin into Master..'
+git pull
+
+echo '-----> Deleting Local Remote Branches..'
+git fetch -p
+
+echo '-----> Deleting Local Branches..'
+git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
+
+echo '-----> Bundling..'
+bundle
+
+echo '-----> Migrating..'
+rake db:migrate
