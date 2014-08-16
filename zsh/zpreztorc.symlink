@@ -118,7 +118,7 @@ zstyle ':prezto:module:prompt' theme 'skwp'
 #
 
 # Auto set the tab and window titles.
-# zstyle ':prezto:module:terminal' auto-title 'yes'
+zstyle ':prezto:module:terminal' auto-title 'yes'
 
 #
 # Tmux
