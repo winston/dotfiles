@@ -10,7 +10,7 @@ echo '-----> Deleting Local Branches..'
 git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
 
 echo '-----> Bundling..'
-bundle
+bundle -j4
 
 echo '-----> Migrating..'
 rake db:migrate
