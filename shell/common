@@ -51,5 +51,7 @@ alias gx="gitx"
 # npm (https://github.com/creationix/nvm)
 ###############
 
-export NVM_DIR=~/.nvm
-. `brew --prefix nvm`/nvm.sh
+if [ -d "~/.nvm" ]; then
+  export NVM_DIR=~/.nvm
+  . `brew --prefix nvm`/nvm.sh
+fi
