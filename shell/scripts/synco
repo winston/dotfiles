@@ -1,5 +1,8 @@
 #!/bin/sh
 
+echo '-----> Checking out Master..'
+git checkout master
+
 echo '-----> Pulling from Origin into Master..'
 git pull
 
