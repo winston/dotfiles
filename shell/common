@@ -1,7 +1,7 @@
 # Path
 ###############
 
-export PATH="./bin:$HOME/.rvm/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/Versions/9.3/bin:$HOME/.dotfiles/shell/scripts:$PATH"
+export PATH="./bin:$HOME/.rvm/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin:$HOME/.dotfiles/shell/scripts:$PATH"
 export GOPATH="$HOME/workspace/go"
 
 # Aliases
