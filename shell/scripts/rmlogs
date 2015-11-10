@@ -1,0 +1,17 @@
+#!/bin/sh
+
+for folder in ~/workspace/*; do
+  if [[ -d $folder ]]; then
+    echo "Clearing Logs in: $folder"
+
+    for log in $folder/log/*.log; do
+      if [[ -e $log ]]; then
+        echo "--> $log"
+        > $log
+        ls -al $log
+      fi
+    done
+
+    echo "***"
+  fi
+done
