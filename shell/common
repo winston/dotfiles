@@ -29,6 +29,7 @@ alias src="spring rails c"
 alias sr="spring rspec"
 alias ss="spring status"
 alias ss="spring stop"
+alias bi="bundle install --path vendor/bundle"
 
 # Git
 alias gpull="git pull"
