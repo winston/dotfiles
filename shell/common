@@ -3,6 +3,7 @@
 
 export PATH="./bin:$PATH:$HOME/.rvm/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin:$HOME/.dotfiles/shell/scripts"
 export GOPATH="$HOME/workspace/go"
+export EDITOR="atom"
 
 # Aliases
 ###############
