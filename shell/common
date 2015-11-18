@@ -22,10 +22,10 @@ alias rd_start='redis-server /usr/local/etc/redis.conf'
 alias es_start='elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
 
 ## Rails
-alias rs="rails s"
+alias rs="rails s --bind 0.0.0.0"
 alias rc="rails c"
 alias rd="rake db:migrate db:test:prepare"
-alias srs="spring rails s"
+alias srs="spring rails s --bind 0.0.0.0"
 alias src="spring rails c"
 alias sr="spring rspec"
 alias ss="spring status"
