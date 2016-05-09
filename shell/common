@@ -15,8 +15,8 @@ alias ..="cd .."
 alias ws="cd workspace"
 
 ## Databases
-alias mybeg="mysql.server start"
-alias myend="mysql.server stop"
+alias my_start="mysql.server start"
+alias my_stop="mysql.server stop"
 
 alias rd_start='redis-server /usr/local/etc/redis.conf'
 alias es_start='elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
@@ -31,6 +31,8 @@ alias sr="spring rspec"
 alias ss="spring status"
 alias ss="spring stop"
 alias bi="bundle install --path vendor/bundle"
+alias be="bundle exec"
+alias er='export $(cat .env); rspec'
 
 # Git
 alias gpull="git pull"
