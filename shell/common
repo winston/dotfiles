@@ -32,7 +32,7 @@ alias ss="spring status"
 alias ss="spring stop"
 alias bi="bundle install --path vendor/bundle"
 alias be="bundle exec"
-alias er='export $(cat .env); rspec'
+alias er='export $(cat .env); bundle exec rspec'
 
 # Git
 alias gpull="git pull"
