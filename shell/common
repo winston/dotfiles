@@ -1,7 +1,7 @@
 # Path
 ###############
 
-export PATH="./bin:$PATH:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/Versions/9.5/bin:$HOME/.dotfiles/shell/scripts"
+export PATH="./bin:$PATH:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/Versions/9.5/bin:$HOME/.dotfiles/shell/scripts:$HOME/.dotfiles/shell/secret_scripts"
 export EDITOR="atom"
 
 # Aliases
