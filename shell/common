@@ -62,10 +62,9 @@ alias gx="gitx"
 
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
-# npm (https://github.com/creationix/nvm)
+# npm (https://github.com/lukechilds/zsh-nvm)
 ###############
 
-if [ -d ".nvm" ]; then
-  export NVM_DIR=~/.nvm
-  . `brew --prefix nvm`/nvm.sh
+if [ -d ".zsh-nvm" ]; then
+  source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 fi
