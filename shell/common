@@ -55,12 +55,7 @@ alias gx="gitx"
 # rvm
 ###############
 
-[[ -s "$HOME/.gvm/scripts/rvm" ]] && source "$HOME/.gvm/scripts/rvm"
-
-# gvm
-###############
-
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # npm (https://github.com/lukechilds/zsh-nvm)
 ###############
