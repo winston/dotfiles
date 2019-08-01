@@ -1,21 +1,36 @@
 # Credits: https://github.com/rtomayko/dotfiles/blob/rtomayko/.gitconfig
 
 [user]
-	name         = Winston
-	email        = winston.yongwei@gmail.com
+	name = Winston
+	email = winston.yongwei@gmail.com
 
 [alias]
-  st            = status
-  ll            = log --pretty=oneline --abbrev-commit --max-count=15
-  wip           = !git add -u && git commit -m ...
-  wipc          = !date >> WIP && git add WIP && git commit -m ...
-
-[push]
-  default       = matching
-
-[color]
-  ui            = auto
+  st = status
+  ll = log --pretty=oneline --abbrev-commit --max-count=15
+  wip = !git add -u && git commit -m ...
+  wipc = !date >> WIP && git add WIP && git commit -m ...
 
 [core]
   excludesfile  = ~/.gitignore
-	editor = subl -n -w
+	editor = code
+
+[credential]
+	helper = osxkeychain
+
+[diff]
+	algorithm = patience
+
+[protocol]
+	version = 2
+
+[push]
+  default = matching
+
+[color]
+  ui = auto
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
