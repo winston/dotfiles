@@ -2,8 +2,7 @@
 gem: --no-ri --no-rdoc
 :update_sources: true
 :sources:
-- http://gems.rubyforge.org
-- http://gems.github.com
+- https://rubygems.org
 :verbose: true
 :backtrace: false
 :bulk_threshold: 1000
