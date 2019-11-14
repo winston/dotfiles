@@ -11,8 +11,8 @@
   wipc = !date >> WIP && git add WIP && git commit -m ...
 
 [core]
-  excludesfile  = ~/.gitignore
-	editor = code
+  excludesfile = ~/.gitignore
+  editor = vi
 
 [credential]
 	helper = osxkeychain
