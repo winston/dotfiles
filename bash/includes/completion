@@ -1,2 +1,0 @@
-source ~/.dotfiles/bash/includes/scripts/git_completion
-complete -C ~/.dotfiles/bash/includes/scripts/rake_completion -o default rake

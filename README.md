@@ -4,30 +4,23 @@ For use on my machines. Gloriously copied from a few places.
 
 ## Prerequisites
 
-### Install Zsh
+### Install [starship.rs](https://starship.rs)
 
-    brew install zsh
+1) Install a Nerd Font
 
-### Install [Prezto](https://github.com/sorin-ionescu/prezto)
+    Download Fira Code Nerd Font from https://www.nerdfonts.com/font-downloads, and add to Font Book.
 
-1) Launch Zsh
+2) Configure iTerm to use Nerd Font
 
-    zsh
+    iTerm > Preferences > Profiles > Text
 
-2) Clone the repository:
+3) Install starship.rs
 
-    git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+    `brew install starship`
 
-3) Create a new Zsh configuration by copying the Zsh configuration files provided:
+4) Configure starship.rs
 
-    setopt EXTENDED_GLOB
-    for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-      ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-    done
-
-4) Set Zsh as your default shell:
-
-    chsh -s /bin/zsh
+    `starship preset nerd-font-symbols > ~/.config/starship.toml`
 
 ## Installation
 

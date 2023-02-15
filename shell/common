@@ -52,14 +52,7 @@ alias gx="gitx"
 
 . `brew --prefix`/etc/profile.d/z.sh
 
-# rvm
+# asdf
 ###############
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-# npm (https://github.com/lukechilds/zsh-nvm)
-###############
-
-if [ -d ".zsh-nvm" ]; then
-  source ~/.zsh-nvm/zsh-nvm.plugin.zsh
-fi
+[[ -s "$(brew --prefix asdf)/libexec/asdf.sh" ]] && source "$(brew --prefix asdf)/libexec/asdf.sh"

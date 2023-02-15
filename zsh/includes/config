@@ -7,5 +7,5 @@ alias reload=". ~/.zshrc"
 # Shell Settings
 ###############
 
-## Do not Autocorrect commands
+## Do not autocorrect commands
 unsetopt correct

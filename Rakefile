@@ -34,16 +34,6 @@ task :install do
     end
     `ln -s "$PWD/#{linkable}" "#{target}"`
   end
-
-  Rake::Task["zsh_setup"].invoke
-end
-
-desc "Do more ZSH setup."
-task :zsh_setup do
-  # Set up ZSH prompt
-  Dir.glob('zsh/prompt/*').each do |file|
-    `cp #{file} $HOME/.zprezto/modules/prompt/functions/$1`
-  end
 end
 
 task :uninstall do
