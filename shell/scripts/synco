@@ -1,7 +1,7 @@
 #!/bin/sh
 
-echo '-----> Checking out Master..'
-git checkout master
+echo '-----> Checking out Main..'
+git checkout main
 
 echo '-----> Pulling from Origin into Master..'
 git pull
@@ -11,9 +11,3 @@ git fetch -p
 
 echo '-----> Deleting Local Branches..'
 git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
-
-echo '-----> Bundling..'
-bundle install --path vendor/bundle
-
-echo '-----> Migrating..'
-rake db:migrate
