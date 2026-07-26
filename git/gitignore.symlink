@@ -1,3 +1,5 @@
 .DS_Store
 .idea
 vendor/bundle
+
+**/.claude/settings.local.json

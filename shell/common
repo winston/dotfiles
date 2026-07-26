@@ -1,8 +1,12 @@
 # Path
 ###############
 
-export PATH="./bin:$PATH:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:$HOME/.dotfiles/shell/scripts:$HOME/.dotfiles/shell/secret_scripts"
+export PATH="./bin:$PATH:$HOME/.local/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:$HOME/.dotfiles/shell/scripts:$HOME/.dotfiles/shell/secret_scripts"
 export EDITOR="vi"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Aliases
 ###############
@@ -22,6 +26,9 @@ alias pg_stop="pg_ctl stop -D '/Users/winston/Library/Application Support/Postgr
 
 alias rd_start="redis-server /usr/local/etc/redis.conf"
 alias es_start="elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
+
+## Claude
+alias superclaude="caffeinate -i tmux new -A -s claude"
 
 # Git
 alias gpull="git pull"
