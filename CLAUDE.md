@@ -32,8 +32,8 @@ There is no build, lint, or test suite in this repo — it's shell/Ruby config f
   Adding config for a new tool means creating a new top-level directory with a
   `<name>.symlink` file inside it (the directory name doesn't need to match the tool name).
 - `shell/scripts/` holds standalone executable scripts (not symlinked as dotfiles) that get
-  added to `PATH` via `shell/common`. `shell/secret_scripts` is referenced in `PATH` too but
-  is gitignored — it's a local-only, untracked directory for private scripts.
+  added to `PATH` via `shell/common`. `shell/work_only` is gitignored — an optional,
+  untracked, local-only override file for work-machine-specific config.
 - Shell aliases/env live in two places with different scope: `shell/common` is
   shell-agnostic (PATH, `$EDITOR`, aliases for git, `zoxide`, `mise` init) and is
   sourced by both zsh (and presumably bash) setups; `zsh/includes/config` is zsh-only
