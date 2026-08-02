@@ -42,7 +42,6 @@ alias gc="git commit"
 alias gk="git checkout"
 alias gd="git diff"
 alias gl="git ll"
-alias gx="gitx"
 
 # z (brew install z)
 ###############
