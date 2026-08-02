@@ -25,3 +25,6 @@
 
 [color]
   ui = auto
+
+[include]
+  path = ~/.dotfiles/shell/work_only/gitconfig

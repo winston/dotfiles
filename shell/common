@@ -1,7 +1,7 @@
 # Path
 ###############
 
-export PATH="./bin:$PATH:$HOME/.local/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:$HOME/.dotfiles/shell/scripts:$HOME/.dotfiles/shell/secret_scripts"
+export PATH="./bin:$PATH:$HOME/.local/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:$HOME/.dotfiles/shell/scripts"
 export EDITOR="vi"
 
 # bun

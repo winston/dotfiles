@@ -8,3 +8,6 @@ source ~/.dotfiles/zsh/includes/config
 
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
+# Machine-local overrides
+[ -f ~/.dotfiles/shell/work_only/config ] && source ~/.dotfiles/shell/work_only/config
