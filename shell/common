@@ -17,16 +17,6 @@ alias ..="cd .."
 
 alias ws="cd workspace"
 
-## Databases
-alias my_start="mysql.server start"
-alias my_stop="mysql.server stop"
-
-alias pg_start="open /Applications/Postgres.app"
-alias pg_stop="pg_ctl stop -D '$HOME/Library/Application Support/Postgres/var-16'"
-
-alias rd_start="redis-server /usr/local/etc/redis.conf"
-alias es_start="elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
-
 ## Claude
 alias super="caffeinate -i tmux new -A -s boruto"
 
@@ -43,10 +33,10 @@ alias gk="git checkout"
 alias gd="git diff"
 alias gl="git ll"
 
-# z (brew install z)
+# zoxide (brew install zoxide)
 ###############
 
-. `brew --prefix`/etc/profile.d/z.sh
+eval "$(zoxide init zsh)"
 
 # mise
 ###############
