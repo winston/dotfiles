@@ -22,7 +22,7 @@ alias my_start="mysql.server start"
 alias my_stop="mysql.server stop"
 
 alias pg_start="open /Applications/Postgres.app"
-alias pg_stop="pg_ctl stop -D '/Users/winston/Library/Application Support/Postgres/var-16'"
+alias pg_stop="pg_ctl stop -D '$HOME/Library/Application Support/Postgres/var-16'"
 
 alias rd_start="redis-server /usr/local/etc/redis.conf"
 alias es_start="elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
@@ -43,19 +43,6 @@ alias gk="git checkout"
 alias gd="git diff"
 alias gl="git ll"
 alias gx="gitx"
-
-## Rails
-alias rs="rails s --bind 0.0.0.0"
-alias rc="rails c"
-alias rd="rake db:migrate db:test:prepare"
-alias srs="spring rails s --bind 0.0.0.0"
-alias src="spring rails c"
-alias sr="spring rspec"
-alias ss="spring status"
-alias ss="spring stop"
-alias bi="bundle install --path vendor/bundle"
-alias be="bundle exec"
-alias er='export $(cat .env); bundle exec rspec'
 
 # z (brew install z)
 ###############

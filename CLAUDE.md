@@ -21,7 +21,7 @@ There is no build, lint, or test suite in this repo — it's shell/Ruby config f
 
 ## Structure and conventions
 
-- **Only files ending in `.symlink` get installed.** The Rakefile globs `*/**{.symlink}`
+- **Only files ending in `.symlink` get installed.** The Rakefile globs `**/*.symlink`
   and derives the target dotfile name by stripping `.symlink` (e.g.
   `git/gitconfig.symlink` -> `~/.gitconfig`). Non-`.symlink` files (like `shell/common`,
   `zsh/includes/config`) are not linked directly into `$HOME`; instead they are `source`d

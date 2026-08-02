@@ -23,9 +23,6 @@
 [protocol]
 	version = 2
 
-[push]
-  default = matching
-
 [color]
   ui = auto
 
