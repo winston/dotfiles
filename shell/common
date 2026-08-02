@@ -66,8 +66,3 @@ alias er='export $(cat .env); bundle exec rspec'
 ###############
 
 [[ -s "$(brew --prefix asdf)/libexec/asdf.sh" ]] && source "$(brew --prefix asdf)/libexec/asdf.sh"
-
-# Python Env Manager
-###############
-
-source "$HOME/.rye/env"
