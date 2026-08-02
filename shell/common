@@ -62,7 +62,7 @@ alias er='export $(cat .env); bundle exec rspec'
 
 . `brew --prefix`/etc/profile.d/z.sh
 
-# asdf
+# mise
 ###############
 
-[[ -s "$(brew --prefix asdf)/libexec/asdf.sh" ]] && source "$(brew --prefix asdf)/libexec/asdf.sh"
+eval "$(mise activate zsh)"
