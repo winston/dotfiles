@@ -35,7 +35,7 @@ There is no build, lint, or test suite in this repo — it's shell/Ruby config f
   added to `PATH` via `shell/common`. `shell/secret_scripts` is referenced in `PATH` too but
   is gitignored — it's a local-only, untracked directory for private scripts.
 - Shell aliases/env live in two places with different scope: `shell/common` is
-  shell-agnostic (PATH, `$EDITOR`, aliases for git/databases, `z`, `mise` init) and is
+  shell-agnostic (PATH, `$EDITOR`, aliases for git, `zoxide`, `mise` init) and is
   sourced by both zsh (and presumably bash) setups; `zsh/includes/config` is zsh-only
   (reload alias, `unsetopt correct`).
 - Prompt is provided by starship.rs (`eval "$(starship init zsh)"` in `zsh/zshrc.symlink`),
