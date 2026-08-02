@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Get all remote branches
-branches=($(git branch -r | grep origin | grep -v 'origin/master'))
+branches=($(git branch -r | grep origin | grep -v 'origin/main'))
 
 # Prints choices
 for i in "${!branches[@]}"; do

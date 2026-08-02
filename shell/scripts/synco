@@ -3,7 +3,7 @@
 echo '-----> Checking out Main..'
 git checkout main
 
-echo '-----> Pulling from Origin into Master..'
+echo '-----> Pulling from Origin into Main..'
 git pull
 
 echo '-----> Deleting Local Remote Branches..'

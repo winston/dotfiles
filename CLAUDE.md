@@ -28,14 +28,14 @@ There is no build, lint, or test suite in this repo — it's shell/Ruby config f
   from an installed symlink file. Concretely: `zsh/zshrc.symlink` sources
   `~/.dotfiles/shell/common` and `~/.dotfiles/zsh/includes/config` by absolute path assuming
   the repo lives at `~/.dotfiles`.
-- Directories are organized by tool: `zsh/`, `shell/`, `git/`, `gem/`, `rails/`, `ruby/`.
+- Directories are organized by tool: `zsh/`, `shell/`, `git/`, `gem/`, `ruby/`.
   Adding config for a new tool means creating a new top-level directory with a
   `<name>.symlink` file inside it (the directory name doesn't need to match the tool name).
 - `shell/scripts/` holds standalone executable scripts (not symlinked as dotfiles) that get
   added to `PATH` via `shell/common`. `shell/secret_scripts` is referenced in `PATH` too but
   is gitignored — it's a local-only, untracked directory for private scripts.
 - Shell aliases/env live in two places with different scope: `shell/common` is
-  shell-agnostic (PATH, `$EDITOR`, aliases for rails/git/databases, `z`, `asdf` init) and is
+  shell-agnostic (PATH, `$EDITOR`, aliases for git/databases, `z`, `mise` init) and is
   sourced by both zsh (and presumably bash) setups; `zsh/includes/config` is zsh-only
   (reload alias, `unsetopt correct`).
 - Prompt is provided by starship.rs (`eval "$(starship init zsh)"` in `zsh/zshrc.symlink`),
