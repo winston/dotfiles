@@ -19,6 +19,7 @@ alias ws="cd workspace"
 
 ## Claude
 alias super="caffeinate -i tmux new -A -s boruto"
+tm() { caffeinate -i tmux new -A -s "$1"; }
 
 # Git
 alias gpull="git pull"
