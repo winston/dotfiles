@@ -1,10 +1,7 @@
 # Source starship.rs
 eval "$(starship init zsh)"
 
-# Customize to your needs...
-
 source ~/.dotfiles/shell/common
-source ~/.dotfiles/zsh/includes/config
 
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"

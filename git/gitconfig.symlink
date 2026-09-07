@@ -1,5 +1,3 @@
-# Credits: https://github.com/rtomayko/dotfiles/blob/rtomayko/.gitconfig
-
 [user]
 	name = Winston
 	email = winston.yongwei@gmail.com
@@ -7,8 +5,6 @@
 [alias]
   st = status
   ll = log --pretty=oneline --abbrev-commit --max-count=15
-  wip = !git add -u && git commit -m ...
-  wipc = !date >> WIP && git add WIP && git commit -m ...
 
 [core]
   excludesfile = ~/.gitignore
@@ -19,12 +15,6 @@
 
 [diff]
 	algorithm = histogram
-
-[protocol]
-	version = 2
-
-[color]
-  ui = auto
 
 [include]
   path = ~/.dotfiles/shell/work_only/gitconfig

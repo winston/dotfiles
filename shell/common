@@ -1,38 +1,31 @@
 # Path
 ###############
 
-export PATH="./bin:$PATH:$HOME/.local/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:$HOME/.dotfiles/shell/scripts"
 export EDITOR="vi"
 
-# bun
 export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$BUN_INSTALL/bin:$PATH:$HOME/.local/bin:$HOME/.dotfiles/shell/scripts"
 
 # Aliases
 ###############
 
-## Easier navigation: .., ..., ~ and -
+alias reload=". ~/.zshrc"
+
 alias ls="ls -alG"
 alias ..="cd .."
-
-alias ws="cd workspace"
-
-## Claude
-alias super="caffeinate -i tmux new -A -s boruto"
-tm() { caffeinate -i tmux new -A -s "$1"; }
 
 # Git
 alias gpull="git pull"
 alias gpush="git push"
 
-alias gf="git fetch -p"
-alias gb="git branch -a"
 alias gs="git status"
 alias ga="git add ."
 alias gc="git commit"
 alias gk="git checkout"
 alias gd="git diff"
 alias gl="git ll"
+alias gf="git fetch -p"
+alias gb="git branch -a"
 
 # zoxide (brew install zoxide)
 ###############
